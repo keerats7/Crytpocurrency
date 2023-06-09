@@ -1,0 +1,217 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "dex",
+				"outputs": [
+					{
+						"internalType": "contract DEX",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "erc20",
+						"type": "address"
+					}
+				],
+				"name": "onERC20Received",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tc",
+				"outputs": [
+					{
+						"internalType": "contract TokenCC",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"onERC20Received(address,uint256,address)": {
+					"details": "Whenever an {IERC20} amount is transferred to this contract from `from`, this function is called. It must return true to confirm the token transfer. If false is returned the transfer will be reverted. The selector can be obtained in Solidity with `IERC20Receiver.onERC20Received.selector`."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DEXtest.sol": "DEXtest"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"DEX.sol": {
+			"keccak256": "0x942a58c6cc2f07af024c1bef0a4853eb1322f5cfcf54b3cfd94196dd9cae6a4c",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://fee2cf9c26cbb8f28f3ae9aa64b0f5916a3429d8fc57301487e98c08bf18f7f4",
+				"dweb:/ipfs/QmUTNsEitqs41xYYsbN6JbS3KNKn6CFSMpvT8rcAqhnYy6"
+			]
+		},
+		"DEXtest.sol": {
+			"keccak256": "0xfe3acb71ce43140f303af898d20d2ba5dd80e9c69ea37fc9692e67ace0acae7c",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://744d66e9e6caf8408cdd7af29210b41798fcae625d1ed105cc46fcecab7a754c",
+				"dweb:/ipfs/QmUW47R3jpGcfxDBGrp3k2uAwzMzs5gSu3w1Hqa7DamfSX"
+			]
+		},
+		"ERC20.sol": {
+			"keccak256": "0x6cb488c3e3e891ab8097c9c3aa563e7614f340a0a1a9797872102c9513797c90",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f718ecb6f4c2e89e651bb12363ef092236a73ef275db6a242204f8c2bad440b7",
+				"dweb:/ipfs/QmbtA9cGkF5K1q3LAkgN4VE8yuAq4v2q8bgsdBYxKpar9Y"
+			]
+		},
+		"EtherPriceOracleConstant.sol": {
+			"keccak256": "0x66127c4c02b2ff0f977e4dcc84afd6c9d415290ffb70e87742fe1cb869f8050c",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://4016754268a314785cb7d6423c5ba57c1f5cc69c9b31ec71de83fdbf851f53fb",
+				"dweb:/ipfs/QmQp2viSGi9fNWB765LhWZH223Y7Thp5SuYcXj42mks7Jf"
+			]
+		},
+		"IDEX.sol": {
+			"keccak256": "0xcb535d3d7fc5cd98ea65dc676325cadd3faf59fbb21e5e2b6c26667f794edd92",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://5dcbc72ec29db789f04056ef2850688ce5810164d7a72e4b6c45156a331e105d",
+				"dweb:/ipfs/QmdCa2fatENeuj74VTe5Y7U9do5NMKJxxRboVUBh3iRTEr"
+			]
+		},
+		"IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+			]
+		},
+		"IERC20.sol": {
+			"keccak256": "0x00c839ff53d07d19db2e7cfa1e5133f9ee90a8d64b0e2e57f50446a2d1a3a0e0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3dac621d015a68a5251b1e5d41dda0faf252699bf6e8bcf46a958b29964d9dd1",
+				"dweb:/ipfs/QmP9axjgZv4cezAhALoTemM62sdLtMDJ9MGTxECnNwHgSJ"
+			]
+		},
+		"IERC20Metadata.sol": {
+			"keccak256": "0xc9728de78b2dc3785bc6cc070e1ed8a2a855459b99f6bc1b8d17b4d2821fe36e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2977d4a4bfcd16800b9442abd22134592100c156d5a5f2b6d1cd3d62818ab7b",
+				"dweb:/ipfs/QmcKhKHMKriycRzyFKaQMAqFun33547tykyn2A1tA1KBBW"
+			]
+		},
+		"IERC20Receiver.sol": {
+			"keccak256": "0x08f8e002d83fa1cfdcf645431b56d644cbc6516d07dd0f8ff4c75f49bac3b0ce",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://c052d6b9edf01a7226080ffd1747aa1760e3edd93767b74a2c47ca808ca57e17",
+				"dweb:/ipfs/QmPcjNjYv5ndp7PhwL6WJuhhdAND9iUv2FXSc1qQsFhxWk"
+			]
+		},
+		"IEtherPriceOracle.sol": {
+			"keccak256": "0x9515957149372513f5449806e41b118f0339d6f4ea280a255595c19364212331",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://340df3d769a9977122ce99e9b22dd6b164f7545fb665bfd38ebede14b6bead84",
+				"dweb:/ipfs/QmSbLf75tf1isizM66Kdirfb8Cn5MiSv3Cf4seReJTBWN3"
+			]
+		},
+		"ITokenCC.sol": {
+			"keccak256": "0x703921c58e350113a9ca7a223e467bd9ad1db36859e3abdac85f4e95d0391bc8",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://35219a234535631a41928804dc1ba33095eab886cc15d477ace092ed73e91c4a",
+				"dweb:/ipfs/Qmbk7zVCTaEFoogHNqiebaJh2L6ZZ4Wh7XEXYWUq7SgEh3"
+			]
+		},
+		"TokenCC.sol": {
+			"keccak256": "0x5c1717cbb3f00c6355e7f8bb5dc853801209d77ea0c17c421f9ece5cc755fca9",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://38e00ad61a927e4eb0af9ab8d86a786f3938fef1a31cbb734399b5745620a58c",
+				"dweb:/ipfs/QmdKrZWrFmAPfmuXwYo7CKMs5gGduoV9iLZYaDni2d3zko"
+			]
+		}
+	},
+	"version": 1
+}
